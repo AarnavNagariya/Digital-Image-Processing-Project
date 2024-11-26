@@ -8,7 +8,7 @@ import time
 
 def main():
 	# load image
-	img_name = 'lena.png'
+	img_name = './output/Lenna.png'
 	img = Image.open(img_name)
 	# img = img.resize((30,30))
 	print(img_name, img.format, img.size, img.mode)
