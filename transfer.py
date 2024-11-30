@@ -86,7 +86,7 @@ def single_palette_color_transfer(pixel_color, ori_color, modified_color):
 def get_weights(pixel_color, ori_palette):
 	
 	dist = []
-	for p1, p2 in itertools.combinations(ori_palette, 2):
+	for p1, p2 in itertools.combinations(ori_palette, 2): # Pairwise Distance
 		dist.append(distance(p1,p2))
 	mean_dist = sum(dist) / len(dist)
 
